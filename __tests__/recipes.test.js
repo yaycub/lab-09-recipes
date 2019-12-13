@@ -38,12 +38,6 @@ describe('recipe routes', () => {
         dateOfEvent: new Date(),
         notes: 'It was good',
         rating: 5
-      },
-      {
-        recipeId: recipe._id,
-        dateOfEvent: new Date(),
-        notes: 'not great',
-        rating: 1
       }
     ]);
   });
@@ -108,7 +102,7 @@ describe('recipe routes', () => {
     return request(app)
       .get(`/api/v1/recipes/${recipe._id}`)
       .then(res => {
-        expect(res.body).toEqual({
+        expect(res.body).toMatchObject({
           _id: expect.any(String),
           name: 'cookies',
           ingredients: [
@@ -124,6 +118,8 @@ describe('recipe routes', () => {
           __v: 0
         });
       });
+
+    
   });
 
   it('updates a recipe by id', async() => {
