@@ -38,12 +38,6 @@ describe('recipe routes', () => {
         dateOfEvent: new Date(),
         notes: 'It was good',
         rating: 5
-      },
-      {
-        recipeId: recipe._id,
-        dateOfEvent: new Date(),
-        notes: 'not great',
-        rating: 1
       }
     ]);
   });
