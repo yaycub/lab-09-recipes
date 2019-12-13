@@ -1,7 +1,7 @@
 import Component from '../Component.js';
 import RecipeItem from './RecipeItem.js';
 
-class TodoList extends Component {
+class RecipeList extends Component {
     
   onRender(list) {
     const recipes = this.props.recipes;
@@ -18,4 +18,4 @@ class TodoList extends Component {
   }
 }
 
-export default TodoList;
+export default RecipeList;

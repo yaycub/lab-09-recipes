@@ -5,6 +5,16 @@ export async function getRecipes() {
   const url = `${URL}`;
 
   const response = await fetch(url);
+  const data = await response.json();
     
-  return response;
+  return data;
+}
+
+export async function getRecipe(id){
+  const url = `${URL}/${id}`;
+
+  const response = await fetch(url);
+  const data = await response.json();
+
+  return data;
 }

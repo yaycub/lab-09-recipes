@@ -7,7 +7,7 @@ class RecipeItem extends Component {
 
     return `
             <li class="recipe-item">
-                <a href="../recipe/recipe.html?id=${recipe.id}">${recipe.name}</a>
+                <a href="./recipe.html?id=${recipe._id}">${recipe.name}</a>
             </li>
         `;
   }

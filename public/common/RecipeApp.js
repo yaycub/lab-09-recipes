@@ -12,31 +12,6 @@ class RecipeApp extends Component {
     const main = dom.querySelector('main');
     const error = dom.querySelector('.error');
 
-    // const addTodos = new AddTodo({
-    //   onAdd: async todo => {
-    //     loading.update({ loading: true });
-    //     error.textContent = '';
-
-    //     try {
-    //       const saved = await addTodo(todo);
-                    
-    //       const todos = this.state.todos;
-    //       todos.push(saved);
-
-    //       todoList.update({ todos });
-    //     }
-    //     catch(err) {
-    //       error.textContent = err;
-    //       throw err;
-    //     }
-    //     finally {
-    //       loading.update({ loading: false });
-    //     }
-    //   }
-    // });
-
-    // main.appendChild(addTodos.renderDOM());
-
     const recipeList = new RecipeList({ 
       recipes: [],
     });
